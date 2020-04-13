@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>freeCodeCamp - Build a Personal Portfolio Webpage</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body class="home">
+		<nav id="navbar">
+			<div class="container">
+				<div class="items">
+					<ul>
+						<li>
+							<a href="#welcome-section" class="logo js-smooth-scroll">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 485 223.1"
+									class="injected-svg js-inject-me activeSvg"
+								>
+									<title>logo-site</title>
+									<g id="Calque_2" data-name="Calque 2">
+										<g id="Calque_1-2" data-name="Calque 1">
+											<path d="M83.3,10.7H45v94.92H41V10.7H0V7H83.3Z"></path>
+											<path
+												d="M92.25,47.59a28.44,28.44,0,0,1,11.11-12.22Q110.63,31,121.06,31q12.68,0,19.25,7.24t6.57,22.82v44.55h-4.13V60.93q0-14.42-5.89-20.34t-15.72-5.92q-12.91,0-19.93,6.84a31.7,31.7,0,0,0-9,17.53v46.58H88.19V68.11H88V65.74a12,12,0,0,1,.15-1.9V0h4.05Z"
+											></path>
+											<path
+												d="M153.65,67.57q0-16.11,9.87-26.34T189.15,31q15.83,0,25.7,10.22t9.87,26.34v2.84q0,16.18-9.87,26.4T189.3,107q-15.84,0-25.74-10.22t-9.91-26.4Zm4.05,2.84q0,13.81,8.56,23.39t23,9.58q14.26,0,22.81-9.61t8.56-23.36V67.57A33.74,33.74,0,0,0,212,44.38q-8.63-9.71-22.89-9.72t-22.89,9.72a33.91,33.91,0,0,0-8.56,23.19Z"
+											></path>
+											<path
+												d="M234.71,32.36l.53,14.76a28.24,28.24,0,0,1,10.58-11.88Q252.65,31,262.48,31q10.36,0,16.89,4.71t9.08,14.59a29.35,29.35,0,0,1,10.62-14.25q7.24-5.11,18.05-5.11,13.43,0,20.41,7.92t7,24.91v41.77h-4.13V63.64q0-15.91-6.3-22.48T317.27,34.6q-12.53,0-19.1,6.63t-8.44,17.2q.07,1.36.15,2.74t.07,2.81v41.64h-4.13V68.11h-.23q0-1.28,0-2.57c0-.86.09-1.69.19-2.5q-.23-15.57-6.45-22t-16.74-6.4q-12.38,0-18.87,6.47a31.16,31.16,0,0,0-8.44,16.76v47.73h-4.13V68.11H231q0-.95,0-1.9t.11-2.37V32.36Z"
+											></path>
+											<path
+												d="M408.31,92.07a30.47,30.47,0,0,1-12.53,10.8Q387.45,107,375.59,107q-11.33,0-17.79-5.59t-6.45-15.06q0-9.21,9.64-15.44t24.13-6.23h23.19V54q0-9.14-6.49-14.25t-18.27-5.11q-11,0-17.75,4.81t-6.72,12.39l-3.38-.13-.15-.34q-.45-8.53,7.35-14.45T383.54,31q13.06,0,20.94,6t7.88,17.2V90.86a56.63,56.63,0,0,0,.49,7.51,43.14,43.14,0,0,0,1.61,7.24H410q-1-4.81-1.31-7.21a37.22,37.22,0,0,1-.34-5.18Zm-32.72,11.37q12.08,0,20.45-4.81A28.67,28.67,0,0,0,408.31,84.9V68.45h-23q-12.61,0-21.28,5.25t-8.67,13a15.16,15.16,0,0,0,5.52,12.08Q366.43,103.45,375.59,103.45Z"
+											></path>
+											<path
+												d="M475.94,87.67q0-5.82-5.52-10.6T451.17,69.6q-14.49-2.77-21-7.14t-6.49-13q0-7.85,7.36-13.17T450.87,31q13.43,0,21.16,5.69t7.35,14.83l-.15.41h-3.45q0-7.18-6.72-12.22t-18.2-5q-11.41,0-17.26,4.43t-5.85,10.26a12.3,12.3,0,0,0,5,9.82q5,4.06,19.66,7.11Q466,69.12,473,74a15.79,15.79,0,0,1,7,13.71q0,8.6-7.81,13.95T451.47,107q-14.18,0-22.25-5.72T421.68,87.4l.15-.41h3.3a14.25,14.25,0,0,0,8.26,12.52,39.72,39.72,0,0,0,18.09,3.86q11.26,0,17.86-4.74T475.94,87.67Z"
+											></path>
+											<path
+												d="M108.62,190.13l.15.41q.3,13.88-10.81,23.22T68.62,223.1q-18.54,0-30.21-11.85T26.75,181.19V163.65q0-18.21,11.67-30.09t30.21-11.88q18.54,0,29.49,8.9t10.66,23.59l-.15.41H94.44q0-10.36-6.75-16.38t-19.06-6q-12.38,0-19.74,9t-7.35,22.34v17.67q0,13.47,7.35,22.48t19.74,9q12.31,0,19.06-6t6.75-16.55Z"
+											></path>
+											<path d="M129.65,221.67H114.87V116.06h14.78Z"></path>
+											<path
+												d="M190,221.67q-.75-3.32-1.16-5.86a38.64,38.64,0,0,1-.49-5.11,33.49,33.49,0,0,1-10.77,8.84,29.85,29.85,0,0,1-14.3,3.55q-12.68,0-19.33-5.86t-6.64-16.15q0-10.49,9.42-16.42t25.55-5.92h16.06v-7.24A12.77,12.77,0,0,0,184,161.32q-4.35-3.76-12.31-3.76-7.2,0-11.63,3.25t-4.43,7.79l-14,.13-.15-.41q-.53-8,8.29-14.62t22.78-6.63q13.81,0,22.21,6.33t8.41,18.25v35.27a62,62,0,0,0,.45,7.58,35.63,35.63,0,0,0,1.65,7.18Zm-24.54-9.75a28.45,28.45,0,0,0,14.48-3.72q6.45-3.72,8.41-8.53V187.76H171.76q-8.93,0-14.3,4.06t-5.37,9.55a9.56,9.56,0,0,0,3.38,7.72Q158.86,211.92,165.46,211.92Z"
+											></path>
+											<path
+												d="M228.29,129.67H213.5V116.06h14.78Zm0,92H213.5V148.42h14.78Z"
+											></path>
+											<path
+												d="M277.16,160.2l-7.58-.4a18.31,18.31,0,0,0-9.87,2.5,16.49,16.49,0,0,0-6.19,7v52.33H238.73V148.42h13.21l1.43,10.7a26.42,26.42,0,0,1,8.52-8.87,21.47,21.47,0,0,1,11.67-3.18,20.21,20.21,0,0,1,3.15.24,23.09,23.09,0,0,1,2.48.51Z"
+											></path>
+											<path
+												d="M312.44,223.1Q295,223.1,285.16,213t-9.79-26.54v-3q0-15.77,10.09-26.1a33.16,33.16,0,0,1,24.65-10.32q16.28,0,24.43,9.14t8.14,24.31v7H290.75l-.23.34q0,11,5.4,17.91t16.51,6.87a40.89,40.89,0,0,0,13.17-1.93,30.08,30.08,0,0,0,9.72-5.31l5.78,8.67a36.29,36.29,0,0,1-11.48,6.4A50.23,50.23,0,0,1,312.44,223.1Zm-2.33-65.53a16.82,16.82,0,0,0-12.8,5.38,24.2,24.2,0,0,0-6.19,13.78l.15.34H327.9V176q0-8-4.35-13.2T310.11,157.56Z"
+											></path>
+											<path
+												d="M396.88,221.67q-.75-3.32-1.16-5.86a38.86,38.86,0,0,1-.49-5.11,33.49,33.49,0,0,1-10.77,8.84,29.85,29.85,0,0,1-14.3,3.55q-12.68,0-19.33-5.86t-6.64-16.15q0-10.49,9.42-16.42t25.55-5.92h16.06v-7.24a12.77,12.77,0,0,0-4.35-10.19q-4.35-3.76-12.31-3.76-7.2,0-11.63,3.25t-4.43,7.79l-14,.13-.15-.41q-.53-8,8.29-14.62t22.78-6.63q13.81,0,22.21,6.33T410,171.64v35.27a62,62,0,0,0,.45,7.58,35.67,35.67,0,0,0,1.65,7.18Zm-24.54-9.75a28.45,28.45,0,0,0,14.48-3.72q6.45-3.72,8.41-8.53V187.76H378.64q-8.93,0-14.3,4.06T359,201.37a9.56,9.56,0,0,0,3.38,7.72Q365.74,211.92,372.34,211.92Z"
+											></path>
+											<path
+												d="M470.74,210.84a26.25,26.25,0,0,1-9.83,9.07A29.21,29.21,0,0,1,447,223.1q-13.28,0-20.71-7.65t-7.43-23.83V148.42h14.79v43.33q0,11.71,3.83,16.11t11.93,4.4q7.88,0,13-2.88a18.67,18.67,0,0,0,7.77-8.16V148.42H485v73.25H471.72Z"
+											></path>
+										</g>
+									</g>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#skills" class="js-smooth-scroll">Skills</a>
+						</li>
+						<li>
+							<a href="#projects" class="js-smooth-scroll">Portfolio</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+						<div class="logos-sociaux">
+							<li>
+								<a
+									href="https://github.com/thomas-claireau"
+									target="_blank"
+									class="github"
+									id="profile-link"
+								>
+									<i class="fa fa-github-alt" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://www.linkedin.com/in/thomas-claireau/"
+									target="_blank"
+									class="linkedin"
+								>
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://twitter.com/thomas_claireau"
+									target="_blank"
+									class="twitter"
+								>
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="bars-menu-mobile">
+			<div>
+				<span class="bar-1"></span>
+				<span class="bar-2"></span>
+				<span class="bar-3"></span>
+			</div>
+		</div>
+
+		<div>
+			<header class="home" id="welcome-section">
+				<div class="container">
+					<div class="left">
+						<h1>
+							<span> Thomas Claireau </span>
+							Développeur full-stack &amp; webaddict
+						</h1>
+						<div class="buttons">
+							<a href="#presentation" class="btn bleuClair js-smooth-scroll">
+								En savoir plus
+							</a>
+							<a href="#contact" class="btn rougeFonce">
+								Me contacter
+							</a>
+						</div>
+					</div>
+					<div class="right">
+						<img src="img/header/photo-thomas-claireau.jpg" alt="" />
+					</div>
+				</div>
+				<a href="#presentation" class="mouse js-smooth-scroll">
+					<div class="scroll"></div>
+				</a>
+			</header>
+		</div>
+
+		<main id="home">
+			<section id="presentation" class="presentation">
+				<div class="container">
+					<div class="content">
+						<p>
+							Actuellement développeur web full-stack dans une agence proche de
+							Nantes, je suis passionné par le web et l'UX / UI.
+						</p>
+						<p>
+							Mon code s'articule principalement autour de 3 grands pôles : JavaScript
+							- PHP - Wordpress.
+						</p>
+						<p>
+							Je suis également étudiant chez OpenClassrooms où j'ai obtenu une des
+							100 bourses distribuées par l'école en 2018.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="avantages container">
+				<div class="avantage">
+					<div class="picto">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							height="100px"
+							width="100px"
+							fill="#333333"
+							version="1.1"
+							x="0px"
+							y="0px"
+							viewBox="0 0 64 64"
+							enable-background="new 0 0 64 64"
+							xml:space="preserve"
+							class="injected-svg js-inject-me activeSvg"
+						>
+							<g display="none">
+								<rect
+									x="-410.995"
+									y="-245.495"
+									display="inline"
+									fill="#333333"
+									width="786.5"
+									height="405.5"
+								></rect>
+							</g>
+							<g display="none">
+								<g display="inline">
+									<g><rect x="8" y="0" width="48" height="64"></rect></g>
+									<g opacity="0.2">
+										<g>
+											<polygon
+												fill="#333333"
+												points="8,0 8,18.989 30.883,0     "
+											></polygon>
+										</g>
+									</g>
+								</g>
+								<g display="inline">
+									<g>
+										<rect
+											x="41.99"
+											y="44.869"
+											fill="#333333"
+											width="5.329"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="19.342"
+											y="45.119"
+											fill="#333333"
+											width="5.329"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="19.342"
+											y="50.448"
+											fill="#333333"
+											width="5.329"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="37.994"
+											y="42.454"
+											fill="#333333"
+											width="2.665"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="31.332"
+											y="42.454"
+											fill="#333333"
+											width="2.665"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="28.668"
+											y="50.448"
+											fill="#333333"
+											width="3.997"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="27.335"
+											y="45.119"
+											fill="#333333"
+											width="5.329"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="33.997"
+											y="45.119"
+											fill="#333333"
+											width="5.329"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="20.852"
+											y="48.041"
+											fill="#333333"
+											width="5.009"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="19.342"
+											y="53.113"
+											fill="#333333"
+											width="13.323"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="36.661"
+											y="53.113"
+											fill="#333333"
+											width="5.329"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="19.342"
+											y="42.454"
+											fill="#333333"
+											width="7.994"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="44.655"
+											y="17.299"
+											fill="#333333"
+											width="2.665"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="19.342"
+											y="12.22"
+											fill="#333333"
+											width="5.329"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="20.674"
+											y="14.884"
+											fill="#333333"
+											width="2.665"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="33.997"
+											y="17.549"
+											fill="#333333"
+											width="6.661"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="35.329"
+											y="20.213"
+											fill="#333333"
+											width="5.329"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="24.316"
+											y="9.555"
+											fill="#333333"
+											width="11.013"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="28.668"
+											y="17.549"
+											fill="#333333"
+											width="2.665"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="30"
+											y="20.213"
+											fill="#333333"
+											width="2.665"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="28.668"
+											y="12.22"
+											fill="#333333"
+											width="7.994"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="26.003"
+											y="14.884"
+											fill="#333333"
+											width="7.994"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="18.009"
+											y="17.549"
+											fill="#333333"
+											width="7.994"
+											height="1.332"
+										></rect>
+									</g>
+									<g>
+										<rect
+											x="16.677"
+											y="20.213"
+											fill="#333333"
+											width="7.994"
+											height="1.332"
+										></rect>
+									</g>
+								</g>
+								<g display="inline">
+									<g>
+										<path
+											fill="#333333"
+											d="M18.568,32.63l8.886-4.577v1.322l-7.489,3.754v0.038l7.489,3.754v1.322l-8.886-4.577V32.63z"
+										></path>
+									</g>
+									<g>
+										<path
+											fill="#333333"
+											d="M28.695,39.007l5.344-13.884h1.302l-5.362,13.884H28.695z"
+										></path>
+									</g>
+									<g>
+										<path
+											fill="#333333"
+											d="M45.432,33.683l-8.886,4.558v-1.322l7.545-3.754v-0.038l-7.545-3.754v-1.322l8.886,4.558V33.683z"
+										></path>
+									</g>
+								</g>
+							</g>
+							<g display="none">
+								<g display="inline">
+									<rect
+										x="6.968"
+										y="0.97"
+										fill="#333333"
+										width="50.092"
+										height="62.061"
+									></rect>
+									<rect x="10" y="4" width="44.028" height="56"></rect>
+									<path d="M56,2v60H8V2H56 M58,0H6v64h52V0L58,0z"></path>
+								</g>
+								<g display="inline">
+									<rect
+										x="41.99"
+										y="44.869"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="19.342"
+										y="45.119"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="19.342"
+										y="50.448"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="37.994"
+										y="42.454"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="31.332"
+										y="42.454"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="28.668"
+										y="50.448"
+										fill="#333333"
+										width="3.997"
+										height="1.332"
+									></rect>
+									<rect
+										x="27.335"
+										y="45.119"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="33.997"
+										y="45.119"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="20.852"
+										y="48.041"
+										fill="#333333"
+										width="5.009"
+										height="1.332"
+									></rect>
+									<rect
+										x="19.342"
+										y="53.113"
+										fill="#333333"
+										width="13.323"
+										height="1.332"
+									></rect>
+									<rect
+										x="36.661"
+										y="53.113"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="19.342"
+										y="42.454"
+										fill="#333333"
+										width="7.994"
+										height="1.332"
+									></rect>
+									<rect
+										x="44.655"
+										y="17.299"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="19.342"
+										y="12.22"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="20.674"
+										y="14.884"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="33.997"
+										y="17.549"
+										fill="#333333"
+										width="6.661"
+										height="1.332"
+									></rect>
+									<rect
+										x="35.329"
+										y="20.213"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="24.316"
+										y="9.555"
+										fill="#333333"
+										width="11.013"
+										height="1.332"
+									></rect>
+									<rect
+										x="28.668"
+										y="17.549"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="30"
+										y="20.213"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="28.668"
+										y="12.22"
+										fill="#333333"
+										width="7.994"
+										height="1.332"
+									></rect>
+									<rect
+										x="26.003"
+										y="14.884"
+										fill="#333333"
+										width="7.994"
+										height="1.332"
+									></rect>
+									<rect
+										x="18.009"
+										y="17.549"
+										fill="#333333"
+										width="7.994"
+										height="1.332"
+									></rect>
+									<rect
+										x="16.677"
+										y="20.213"
+										fill="#333333"
+										width="7.994"
+										height="1.332"
+									></rect>
+								</g>
+								<g display="inline">
+									<path
+										fill="#333333"
+										d="M18.568,32.63l8.886-4.577v1.322l-7.489,3.754v0.038l7.489,3.754v1.322l-8.886-4.577V32.63z"
+									></path>
+									<path
+										fill="#333333"
+										d="M28.695,39.007l5.344-13.884h1.302l-5.362,13.884H28.695z"
+									></path>
+									<path
+										fill="#333333"
+										d="M45.432,33.683l-8.886,4.558v-1.322l7.545-3.754v-0.038l-7.545-3.754v-1.322l8.886,4.558V33.683z"
+									></path>
+								</g>
+							</g>
+							<g display="none">
+								<g display="inline">
+									<rect
+										x="6.968"
+										y="0.97"
+										fill="#333333"
+										width="50.092"
+										height="62.061"
+									></rect>
+									<rect x="10" y="4" width="44.028" height="56"></rect>
+									<path d="M56,2v60H8V2H56 M58,0H6v64h52V0L58,0z"></path>
+								</g>
+								<g display="inline">
+									<rect
+										x="41.99"
+										y="44.869"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="19.342"
+										y="45.119"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="19.342"
+										y="50.448"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="37.994"
+										y="42.454"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="31.332"
+										y="42.454"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="28.668"
+										y="50.448"
+										fill="#333333"
+										width="3.997"
+										height="1.332"
+									></rect>
+									<rect
+										x="27.335"
+										y="45.119"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="33.997"
+										y="45.119"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="20.852"
+										y="48.041"
+										fill="#333333"
+										width="5.009"
+										height="1.332"
+									></rect>
+									<rect
+										x="19.342"
+										y="53.113"
+										fill="#333333"
+										width="13.323"
+										height="1.332"
+									></rect>
+									<rect
+										x="36.661"
+										y="53.113"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="19.342"
+										y="42.454"
+										fill="#333333"
+										width="7.994"
+										height="1.332"
+									></rect>
+									<rect
+										x="44.655"
+										y="17.299"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="19.342"
+										y="12.22"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="20.674"
+										y="14.884"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="33.997"
+										y="17.549"
+										fill="#333333"
+										width="6.661"
+										height="1.332"
+									></rect>
+									<rect
+										x="35.329"
+										y="20.213"
+										fill="#333333"
+										width="5.329"
+										height="1.332"
+									></rect>
+									<rect
+										x="24.316"
+										y="9.555"
+										fill="#333333"
+										width="11.013"
+										height="1.332"
+									></rect>
+									<rect
+										x="28.668"
+										y="17.549"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="30"
+										y="20.213"
+										fill="#333333"
+										width="2.665"
+										height="1.332"
+									></rect>
+									<rect
+										x="28.668"
+										y="12.22"
+										fill="#333333"
+										width="7.994"
+										height="1.332"
+									></rect>
+									<rect
+										x="26.003"
+										y="14.884"
+										fill="#333333"
+										width="7.994"
+										height="1.332"
+									></rect>
+									<rect
+										x="18.009"
+										y="17.549"
+										fill="#333333"
+										width="7.994"
+										height="1.332"
+									></rect>
+									<rect
+										x="16.677"
+										y="20.213"
+										fill="#333333"
+										width="7.994"
+										height="1.332"
+									></rect>
+								</g>
+								<g display="inline">
+									<path
+										fill="#333333"
+										d="M18.568,32.63l8.886-4.577v1.322l-7.489,3.754v0.038l7.489,3.754v1.322l-8.886-4.577V32.63z"
+									></path>
+									<path
+										fill="#333333"
+										d="M28.695,39.007l5.344-13.884h1.302l-5.362,13.884H28.695z"
+									></path>
+									<path
+										fill="#333333"
+										d="M45.432,33.683l-8.886,4.558v-1.322l7.545-3.754v-0.038l-7.545-3.754v-1.322l8.886,4.558V33.683z"
+									></path>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M58,64V0H6v64H58z M8,2h48v60H8V2z"></path>
+									<rect x="41.866" y="46.743" width="5.579" height="1.583"></rect>
+									<rect x="19.217" y="46.993" width="5.579" height="1.583"></rect>
+									<rect x="19.217" y="52.323" width="5.579" height="1.583"></rect>
+									<rect x="37.868" y="44.329" width="2.915" height="1.582"></rect>
+									<rect x="31.207" y="44.329" width="2.914" height="1.582"></rect>
+									<rect x="28.542" y="52.323" width="4.247" height="1.583"></rect>
+									<rect x="27.21" y="46.993" width="5.579" height="1.583"></rect>
+									<rect x="33.871" y="46.993" width="5.579" height="1.583"></rect>
+									<rect x="20.727" y="49.916" width="5.26" height="1.582"></rect>
+									<rect
+										x="19.217"
+										y="54.988"
+										width="13.572"
+										height="1.582"
+									></rect>
+									<rect x="36.536" y="54.988" width="5.579" height="1.582"></rect>
+									<rect x="19.217" y="44.329" width="8.243" height="1.582"></rect>
+									<rect x="44.53" y="15.174" width="2.915" height="1.582"></rect>
+									<rect x="19.217" y="10.095" width="5.579" height="1.582"></rect>
+									<rect x="20.549" y="12.759" width="2.914" height="1.582"></rect>
+									<rect x="33.871" y="15.424" width="6.912" height="1.582"></rect>
+									<rect x="35.204" y="18.088" width="5.579" height="1.582"></rect>
+									<rect x="24.191" y="7.43" width="11.264" height="1.582"></rect>
+									<rect x="28.542" y="15.424" width="2.915" height="1.582"></rect>
+									<rect x="29.875" y="18.088" width="2.914" height="1.582"></rect>
+									<rect x="28.542" y="10.095" width="8.244" height="1.582"></rect>
+									<rect x="25.878" y="12.759" width="8.243" height="1.582"></rect>
+									<rect x="17.884" y="15.424" width="8.244" height="1.582"></rect>
+									<rect x="16.552" y="18.088" width="8.244" height="1.582"></rect>
+									<polygon
+										points="27.578,36.842 20.207,33.147 27.509,29.486 27.578,29.451 27.578,27.848 18.51,32.519 18.443,32.554     18.443,33.74 27.578,38.446   "
+									></polygon>
+									<polygon
+										points="35.524,24.998 33.953,24.998 28.514,39.132 30.065,39.132 35.457,25.168   "
+									></polygon>
+									<polygon
+										points="45.557,32.535 36.603,27.942 36.421,27.848 36.421,29.451 43.848,33.147 36.491,36.807 36.421,36.842     36.421,38.446 45.557,33.759   "
+									></polygon>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="titre">
+						<h4>Développements divers</h4>
+					</div>
+					<div class="content">
+						<p>Développement de sites web sous des frameworks JS, WordPress</p>
+					</div>
+				</div>
+				<div class="avantage">
+					<div class="picto">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="100px"
+							width="100px"
+							fill="#333333"
+							viewBox="0 0 512 512"
+							x="0px"
+							y="0px"
+							class="injected-svg js-inject-me activeSvg"
+						>
+							<g>
+								<path
+									d="M29.657,258.343A8,8,0,0,0,16,264V488a8,8,0,0,0,8,8H248a8,8,0,0,0,5.657-13.657ZM32,480V283.313L228.687,480Z"
+								></path>
+								<path
+									d="M72,448h64a8,8,0,0,0,5.657-13.657l-64-64A8,8,0,0,0,64,376v64A8,8,0,0,0,72,448Zm8-52.686L116.687,432H80Z"
+								></path>
+								<rect x="104" y="48" width="16" height="16"></rect>
+								<rect x="136" y="48" width="16" height="16"></rect>
+								<rect x="168" y="48" width="16" height="16"></rect>
+								<path
+									d="M180.756,160.7A7.884,7.884,0,0,0,176,168v88a8,8,0,0,0,4.751,7.311l72,32a7.968,7.968,0,0,0,6.5-.006l0,.006,72-32A8,8,0,0,0,336,256V168a7.884,7.884,0,0,0-4.756-7.3l0-.011-72-32a8.01,8.01,0,0,0-6.5,0l-72,32ZM248,275.69,192,250.8V180.31L248,205.2ZM320,250.8,264,275.69V205.2l56-24.889ZM256,144.754,308.3,168,256,191.245,203.7,168Z"
+								></path>
+								<rect x="248" y="320" width="16" height="40"></rect>
+								<rect x="248" y="72" width="16" height="40"></rect>
+								<rect
+									x="128.75"
+									y="133.438"
+									width="16"
+									height="37.125"
+									transform="translate(-59.345 209.889) rotate(-64.47)"
+								></rect>
+								<rect
+									x="356.688"
+									y="144"
+									width="37.125"
+									height="16"
+									transform="translate(-28.87 176.566) rotate(-25.53)"
+								></rect>
+								<rect
+									x="118.188"
+									y="272"
+									width="37.125"
+									height="16"
+									transform="translate(-107.333 86.288) rotate(-25.533)"
+								></rect>
+								<path
+									d="M488,384H440V259.314l47.03-47.03a30.627,30.627,0,1,0-43.314-43.313L440,172.687V104a8,8,0,0,0-2.343-5.657l-80-80A8,8,0,0,0,352,16H104A32.036,32.036,0,0,0,72,48V280H88V48a16.019,16.019,0,0,1,16-16H344V80a32.036,32.036,0,0,0,32,32h48v76.686L298.343,314.343a8.008,8.008,0,0,0-2.188,4.088l-8,40a8,8,0,0,0,9.414,9.414l40-8a8,8,0,0,0,4.088-2.188L424,275.314V384H264a8,8,0,0,0-8,8v24H216v16h40v24a8,8,0,0,0,8,8H488a8,8,0,0,0,8-8V392A8,8,0,0,0,488,384ZM360,80V43.314L412.686,96H376A16.019,16.019,0,0,1,360,80ZM315.314,320,440,195.314,460.686,216,336,340.686ZM465.373,176a14.628,14.628,0,0,1,10.343,24.971L472,204.686,451.314,184l3.716-3.716A14.529,14.529,0,0,1,465.373,176ZM308.913,336.227l10.86,10.86L306.2,349.8ZM480,448H272V400h16v16h16V400h16v16h16V400h16v16h16V400h16v16h16V400h16v16h16V400h16v16h16V400h16Z"
+								></path>
+							</g>
+						</svg>
+					</div>
+					<div class="titre">
+						<h4>Web Design et UX</h4>
+					</div>
+					<div class="content">
+						<p>
+							Création de designs uniques, créatifs, adaptés aux différents supports
+						</p>
+					</div>
+				</div>
+				<div class="avantage">
+					<div class="picto">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							height="100px"
+							width="100px"
+							fill="#333333"
+							version="1.1"
+							x="0px"
+							y="0px"
+							viewBox="0 0 100 100"
+							enable-background="new 0 0 100 100"
+							xml:space="preserve"
+							class="injected-svg js-inject-me activeSvg"
+						>
+							<path
+								d="M85,73.75c-2.652,0-5.088,0.928-7.014,2.469L60.56,58.792c1.989-2.385,3.19-5.45,3.19-8.792s-1.201-6.407-3.19-8.792  l6.709-6.709c1.461,1.095,3.268,1.752,5.231,1.752c4.825,0,8.75-3.925,8.75-8.75s-3.925-8.75-8.75-8.75s-8.75,3.925-8.75,8.75  c0,1.962,0.657,3.77,1.752,5.231l-6.709,6.709c-2.385-1.989-5.45-3.19-8.792-3.19s-6.407,1.201-8.792,3.19L19.498,17.731  c1.095-1.461,1.752-3.268,1.752-5.231c0-4.825-3.925-8.75-8.75-8.75S3.75,7.675,3.75,12.5s3.925,8.75,8.75,8.75  c1.962,0,3.77-0.657,5.231-1.752L39.44,41.208c-1.989,2.385-3.19,5.45-3.19,8.792s1.201,6.407,3.19,8.792l-6.709,6.709  c-1.461-1.095-3.268-1.752-5.231-1.752c-4.825,0-8.75,3.925-8.75,8.75s3.925,8.75,8.75,8.75s8.75-3.925,8.75-8.75  c0-1.962-0.657-3.77-1.752-5.231l6.709-6.709c2.385,1.989,5.45,3.19,8.792,3.19s6.407-1.201,8.792-3.19l17.426,17.426  C74.678,79.912,73.75,82.348,73.75,85c0,6.203,5.047,11.25,11.25,11.25S96.25,91.203,96.25,85S91.203,73.75,85,73.75z"
+							></path>
+						</svg>
+					</div>
+					<div class="titre">
+						<h4>Ergonomie et accessibilité</h4>
+					</div>
+					<div class="content">
+						<p>
+							Réalisation d'interfaces conçues pour optimiser l’expérience utilisateur
+						</p>
+					</div>
+				</div>
+				<div class="avantage">
+					<div class="picto">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							height="100px"
+							width="100px"
+							fill="#333333"
+							version="1.1"
+							x="0px"
+							y="0px"
+							viewBox="0 0 512 512"
+							style="enable-background: new 0 0 512 512;"
+							xml:space="preserve"
+							class="injected-svg js-inject-me activeSvg"
+						>
+							<style type="text/css">
+								.st0 {
+									fill: none;
+								}
+							</style>
+							<g>
+								<g>
+									<path
+										d="M244.729126,458.2832031c9.1108398,0,16.5239258-7.4121094,16.5239258-16.5229492    s-7.4130859-16.5234375-16.5239258-16.5234375s-16.5234375,7.4125977-16.5234375,16.5234375    S235.6182861,458.2832031,244.729126,458.2832031z M244.729126,437.2368164c2.4946289,0,4.5239258,2.0292969,4.5239258,4.5234375    s-2.0292969,4.5229492-4.5239258,4.5229492c-2.4941406,0-4.5234375-2.0288086-4.5234375-4.5229492    S242.2349854,437.2368164,244.729126,437.2368164z"
+									></path>
+								</g>
+								<g>
+									<path
+										d="M414.2399902,278.8499756c24.8800049-29.2099609,23.5400391-73.25-4.0499268-100.8399658    c-29.0300293-29.0300293-76.25-29.0300293-105.2800293,0c-29.0200195,29.0200195-29.0200195,76.25,0,105.2700195    c14.5200195,14.5100098,33.5799561,21.7699585,52.6398926,21.7699585c17.1900635,0,34.3601074-5.9199829,48.210083-17.7098999    l64.8699951,64.8699341l8.4799805-8.4900513L414.2399902,278.8499756z"
+									></path>
+								</g>
+								<g>
+									<path
+										d="M374.6199951,406.0200195H114.8399658v-80.9700317h-12V431.289978    c0,25.4800415,20.7299805,46.210022,46.2099609,46.210022h191.3601074c25.4799805,0,46.2099609-20.7299805,46.2099609-46.210022    V323.75h-12V406.0200195z M374.6199951,431.289978c0,18.8699951-15.3499756,34.210022-34.2099609,34.210022H149.0499268    c-18.8598633,0-34.2099609-15.3400269-34.2099609-34.210022v-13.2699585h259.7800293V431.289978z"
+									></path>
+								</g>
+								<g>
+									<path
+										d="M114.8399658,98.0200195h259.7800293v43.0799561h12V80.7099609c0-25.4799805-20.7299805-46.2099609-46.2099609-46.2099609    H149.0499268c-25.4799805,0-46.2099609,20.7299805-46.2099609,46.2099609v99.6999512h12V98.0200195z M114.8399658,80.7099609    c0-18.869873,15.3500977-34.2099609,34.2099609-34.2099609h191.3601074c18.8599854,0,34.2099609,15.3400879,34.2099609,34.2099609    v5.3100586H114.8399658V80.7099609z"
+									></path>
+								</g>
+								<g>
+									<rect
+										x="32.8900146"
+										y="292.7399902"
+										width="164.7099609"
+										height="12"
+									></rect>
+								</g>
+								<g>
+									<rect
+										x="53.6700439"
+										y="250.0900879"
+										width="143.9299316"
+										height="12"
+									></rect>
+								</g>
+								<g>
+									<rect
+										x="83.1900635"
+										y="207.4499512"
+										width="114.4099121"
+										height="12"
+									></rect>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="titre">
+						<h4>Optimisation et référencement</h4>
+					</div>
+					<div class="content">
+						<p>Optimisation du code et du contenu de votre site web</p>
+					</div>
+				</div>
+			</section>
+			<section id="skills" class="list-skills">
+				<div class="container">
+					<h2>Skills</h2>
+					<div class="skills">
+						<div class="left">
+							<div class="skill javascript"></div>
+							<div class="skill typescript"></div>
+							<div class="skill webpack"></div>
+							<div class="skill nodejs"></div>
+						</div>
+						<div class="right">
+							<div class="skill php"></div>
+							<div class="skill wordpress"></div>
+							<div class="skill sass"></div>
+							<div class="skill vuejs"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="projects" class="portfolio">
+				<div class="container">
+					<h2>Portfolio</h2>
+				</div>
+				<div class="projets container">
+					<a
+						href="https://app.thomas-claireau.fr/cuda"
+						target="_blank"
+						class="projet project-tile"
+					>
+						<video id="cuda-gif" autoplay="" muted="" loop="">
+							<source src="img/portfolio/gif/cuda.m4v" type="video/mp4" />
+						</video>
+						<img id="cuda" src="img/portfolio/cuda.png" />
+					</a>
+					<a href="http://shtc.fr" target="_blank" class="projet project-tile">
+						<video id="shtc-gif" autoplay="" muted="" loop="">
+							<source src="img/portfolio/gif/shtc.m4v" type="video/mp4" />
+						</video>
+						<img id="shtc" src="img/portfolio/shtc.png" />
+					</a>
+					<a
+						href="https://app.thomas-claireau.fr/films-plein-air"
+						target="_blank"
+						class="projet project-tile"
+					>
+						<video id="films-plein-air-gif" autoplay="" muted="" loop="">
+							<source src="img/portfolio/gif/films-plein-air.m4v" type="video/mp4" />
+						</video>
+						<img id="films-plein-air" src="img/portfolio/films-plein-air.png" />
+					</a>
+					<a
+						href="https://app.thomas-claireau.fr/jeu-de-plateau"
+						target="_blank"
+						class="projet project-tile"
+					>
+						<video id="jeu-de-plateau-gif" autoplay="" muted="" loop="">
+							<source src="img/portfolio/gif/jeu-de-plateau.m4v" type="video/mp4" />
+						</video>
+						<img id="jeu-de-plateau" src="img/portfolio/jeu-de-plateau.png" />
+					</a>
+					<a
+						href="https://app.thomas-claireau.fr/chalets-caviar"
+						target="_blank"
+						class="projet project-tile"
+					>
+						<video id="chalets-caviar-gif" autoplay="" muted="" loop="">
+							<source src="img/portfolio/gif/chalets-caviar.m4v" type="video/mp4" />
+						</video>
+						<img id="chalets-caviar" src="img/portfolio/chalets-caviar.png" />
+					</a>
+					<a
+						href="https://app.thomas-claireau.fr/fitactive"
+						target="_blank"
+						class="projet project-tile"
+					>
+						<video id="fitactive-gif" autoplay="" muted="" loop="">
+							<source src="img/portfolio/gif/fitactive.m4v" type="video/mp4" />
+						</video>
+						<img id="fitactive" src="img/portfolio/fitactive.png" />
+					</a>
+				</div>
+			</section>
+			<section id="contact">
+				<div class="container">
+					<h2>Contactez moi !</h2>
+					<form
+						id="form-contact"
+						action=""
+						method="get"
+						class="formulaire"
+						enctype="multipart/form-data"
+					>
+						<div>
+							<div class="field prenom">
+								<label for="prenom" class="">
+									<input
+										class="input"
+										type="text"
+										name="prenom"
+										id="prenom"
+										placeholder="Votre prénom *"
+										value=""
+										required=""
+									/>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										height="100px"
+										width="100px"
+										fill="#000000"
+										data-name="SOLID BLACK"
+										viewBox="0 0 32 32"
+										x="0px"
+										y="0px"
+										class="injected-svg js-inject-me activeSvg"
+									>
+										<title>
+											people, profil, avatar, user, person, team, ui
+										</title>
+										<path
+											d="M9.86,7.14A6.14,6.14,0,1,1,16,13.29,6.15,6.15,0,0,1,9.86,7.14Zm16,13.28A12.11,12.11,0,0,0,16,15a12.11,12.11,0,0,0-9.89,5.42C4.55,22.71,4,25.16,4.62,26.81,5.82,29.9,11.28,31,16,31s10.18-1.1,11.38-4.19C28,25.16,27.45,22.71,25.89,20.42Z"
+										></path>
+									</svg>
+								</label>
+							</div>
+
+							<div class="field nom">
+								<label for="nom" class="">
+									<input
+										class="input"
+										type="text"
+										name="nom"
+										id="nom"
+										placeholder="Votre nom *"
+										value=""
+										required=""
+									/>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										height="100px"
+										width="100px"
+										fill="#000000"
+										data-name="SOLID BLACK"
+										viewBox="0 0 32 32"
+										x="0px"
+										y="0px"
+										class="injected-svg js-inject-me activeSvg"
+									>
+										<title>
+											people, profil, avatar, user, person, team, ui
+										</title>
+										<path
+											d="M9.86,7.14A6.14,6.14,0,1,1,16,13.29,6.15,6.15,0,0,1,9.86,7.14Zm16,13.28A12.11,12.11,0,0,0,16,15a12.11,12.11,0,0,0-9.89,5.42C4.55,22.71,4,25.16,4.62,26.81,5.82,29.9,11.28,31,16,31s10.18-1.1,11.38-4.19C28,25.16,27.45,22.71,25.89,20.42Z"
+										></path>
+									</svg>
+								</label>
+							</div>
+						</div>
+						<div>
+							<div class="field email">
+								<label for="email" class="">
+									<input
+										class="input"
+										type="mail"
+										name="email"
+										id="email"
+										placeholder="Votre addresse email *"
+										value=""
+										required=""
+									/>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										height="100px"
+										width="100px"
+										fill="#000000"
+										version="1.1"
+										x="0px"
+										y="0px"
+										viewBox="0 0 100 100"
+										style="enable-background: new 0 0 100 100;"
+										xml:space="preserve"
+										class="injected-svg js-inject-me activeSvg"
+									>
+										<path
+											d="M76,26H24c-3.3,0-6,2.7-6,6v36c0,3.3,2.7,6,6,6h52c3.3,0,6-2.7,6-6V32C82,28.7,79.3,26,76,26z M72.8,39.4  c0.3,0.4,0.3,1.1-0.1,1.4l-22,18C50.4,58.9,50.2,59,50,59s-0.4-0.1-0.6-0.2l-22-18c-0.4-0.3-0.5-1-0.1-1.4c0.3-0.4,1-0.5,1.4-0.1  L50,56.7l21.4-17.5C71.8,38.9,72.4,38.9,72.8,39.4z"
+										></path>
+									</svg>
+								</label>
+							</div>
+
+							<div class="field tel">
+								<label for="tel" class="">
+									<input
+										class="input"
+										type="tel"
+										name="tel"
+										id="tel"
+										placeholder="Votre numéro de téléphone"
+										value=""
+									/>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										height="100px"
+										width="100px"
+										fill="#000000"
+										data-name="Layer 1"
+										viewBox="0 0 100 100"
+										x="0px"
+										y="0px"
+										class="injected-svg js-inject-me activeSvg"
+									>
+										<title>UI1</title>
+										<path
+											d="M76.72,99.79a24.84,24.84,0,0,1-11.55-1.24A72.18,72.18,0,0,1,43,85.48c-8.25-6.85-15.73-15.33-23.54-26.69A138.92,138.92,0,0,1,7.58,38.35,37.29,37.29,0,0,1,3.79,23.29,23.64,23.64,0,0,1,17.86,1.69c1.25-.51,2.5-.9,3.7-1.28l.21-.06a7.15,7.15,0,0,1,7.88,2.47q4.47,5.19,9,10.35l5.25,6.08c1.4,1.62,2.79,3.24,4.21,4.83a7.41,7.41,0,0,1,1.31,8.42,23.77,23.77,0,0,1-9.55,11.1c5.06,6.23,9.93,12.17,15.35,17.7.21-.26.43-.52.66-.77a23.61,23.61,0,0,1,12.22-7.31,7.22,7.22,0,0,1,7.44,2.33l.51.59Q85.19,66.73,94.36,77.3a7.26,7.26,0,0,1,1.14,8A23.62,23.62,0,0,1,76.72,99.79ZM23.88,6.09a1.11,1.11,0,0,0-.3.08l-.21.06c-1.13.35-2.19.68-3.18,1.09C14.28,9.77,9.75,16.73,9.88,23.17A31.06,31.06,0,0,0,13.11,35.8,133.25,133.25,0,0,0,24.45,55.34c7.5,10.89,14.62,19,22.42,25.45a66.19,66.19,0,0,0,20.32,12A17.84,17.84,0,0,0,89.89,83c.42-1,.23-1.29-.13-1.71q-9.2-10.58-18.35-21.16l-.51-.59a1.13,1.13,0,0,0-1.4-.39,17.28,17.28,0,0,0-9.12,5.45,25.43,25.43,0,0,0-1.59,2l-.86,1.15-2.08,2.7L53.4,68.1c-6.94-6.7-13-14.21-18.95-21.47l-3.9-4.79,3.34-2a6.75,6.75,0,0,1,.76-.42,17.56,17.56,0,0,0,9.16-9.4,1.44,1.44,0,0,0-.26-1.92c-1.46-1.62-2.88-3.27-4.29-4.92l-5.24-6Q29.52,12,25,6.79C24.49,6.16,24.18,6.05,23.88,6.09Z"
+										></path>
+									</svg>
+								</label>
+							</div>
+						</div>
+						<div>
+							<div class="field message">
+								<label for="message" class="">
+									<textarea
+										class="input"
+										name="message"
+										id="message"
+										placeholder="Votre message"
+										required=""
+									></textarea>
+								</label>
+							</div>
+						</div>
+						<div>
+							<div class="field field-submit">
+								<label for="" class="">
+									<input
+										class="btn vertFonce"
+										type="submit"
+										name=""
+										id=""
+										placeholder=""
+										value="Envoyer"
+									/>
+									<img class="js-inject-me activeSvg" src="" alt="" />
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="credits">
+				<p>
+					© 2019 Tous droits réservés - Thomas Claireau
+				</p>
+			</div>
+			<div class="reseaux">
+				<ul>
+					<li>
+						<a href="https://twitter.com/thomas_claireau" target="_blank">Twitter</a>
+					</li>
+					<li><a href="https://github.com/thomas-claireau" target="_blank">GitHub</a></li>
+					<li>
+						<a href="https://www.linkedin.com/in/thomas-claireau/" target="_blank"
+							>LinkedIn</a
+						>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
